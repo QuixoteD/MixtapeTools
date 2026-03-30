@@ -69,7 +69,36 @@ The single most valuable practice I've developed. Referee 2 is a **health inspec
 
 **Critical Rule:** Referee 2 NEVER modifies author code. It only creates its own replication scripts. The author is the only one who modifies the author's code. This separation ensures the audit is truly independent.
 
-### 2. The Rhetoric of Decks
+### 2. Fletcher (Own All the Numbers)
+
+**Location:** [`skills/fletcher/`](skills/fletcher/) (essay + guide) | `.claude/skills/fletcher/SKILL.md` (actual skill)
+
+A Claude Code **skill** — invoke with `/fletcher` — for auditing empirical output before interpretation begins. Named for Jason Fletcher, who identified a rounding artifact in a p-hacking analysis by asking about the spike at t=1 when everyone else was focused on the spike at t=2.
+
+The habit: when reviewing output, step back from the main coefficient and ask about something else in the table — the odd pattern, the unexpected sign, the sample size that doesn't add up. More often than you'd think, that's where the problem lives.
+
+**The Shklovsky principle:** habit makes perception automatic. You stop seeing your output because you've already decided what it means. Fletcher exists to defamiliarize — to make you see the figure as a stranger would, before your preferred story has automated everything else into background noise.
+
+**Six steps, each crossed off, ruling at the end:**
+
+| Step | Question |
+|------|----------|
+| **1. List everything** | What features are visible — not just the main result? |
+| **2. What would generate this?** | For each feature: what could cause it, including mundane explanations? |
+| **3. Find the hardest one** | Which feature is most difficult to explain under your preferred story? |
+| **4. Own the sample size** | Does N make sense? What dropped? |
+| **5. Check the pattern** | Across specs, subgroups, time — does it cohere? |
+| **6. The ownership test** | If someone asked about any number, do you have an answer? |
+
+**Ruling:** CLEAR / CONDITIONAL / HOLD
+
+**Fletcher and Referee 2 are complements, not substitutes.** Referee 2 asks *is this implemented correctly?* Fletcher asks *do you understand what you're looking at?* Fletcher runs when output first appears; Referee 2 runs when the project is complete. Both should be run. See [`skills/fletcher/README.md`](skills/fletcher/README.md) for the full essay and origin story.
+
+**Usage:** `/fletcher path/to/figure-or-table "what I think the main finding is"`
+
+---
+
+### 3. The Rhetoric of Decks
 
 **Location:** `presentations/`
 
@@ -148,8 +177,10 @@ A template for giving Claude persistent memory within a project. Copy it to your
 MixtapeTools/
 ├── README.md                 # You are here
 ├── workflow.md               # How I use Claude Code for research (START HERE)
-├── skills/                   # Human-readable guide to Claude Code skills
+├── skills/                   # Human-readable guides to Claude Code skills
 │   ├── README.md            # What skills are, how to use them, how to install
+│   ├── fletcher/            # Fletcher: defamiliarization audit for output
+│   │   └── README.md        # Full essay, origin story, six steps
 │   ├── split-pdf/           # Documentation and examples for the split-pdf skill
 │   │   └── README.md        # Detailed guide with methodology and examples
 │   └── newproject/          # Documentation for the new-project scaffold skill
@@ -160,6 +191,8 @@ MixtapeTools/
 │   │   ├── compiletex.md    # /compiletex — Compile LaTeX, report errors/warnings
 │   │   └── newproject.md    # /newproject — Scaffold new research project
 │   └── skills/
+│       ├── fletcher/         # Skill: own all the numbers
+│       │   └── SKILL.md     # Instructions Claude follows (invoke with /fletcher)
 │       ├── split-pdf/        # Skill: download, split, and deep-read PDFs
 │       │   ├── SKILL.md     # Instructions Claude follows
 │       │   └── methodology.md # Why this method works (for humans)
@@ -288,4 +321,4 @@ Use freely. Attribution appreciated but not required.
 
 ---
 
-*Last updated: February 2026*
+*Last updated: March 2026*
