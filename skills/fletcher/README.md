@@ -4,6 +4,22 @@
 
 ---
 
+## Recommended Order: Fletcher First, Then Referee 2
+
+Run `/fletcher` on your key figures and tables before running `/referee2`.
+
+Fletcher catches interpretation problems — features of your output you haven't explained, the number you stopped seeing because you already decided what it meant. It runs during analysis, in your working session, at the moment output appears.
+
+Referee 2 catches implementation problems — coding errors, replication failures, bad controls. It runs after the project is complete, in a fresh session.
+
+**Running Fletcher first means that by the time Referee 2 audits the code, the interpretation has already been stress-tested.** A project that passes both is one where the code is correct *and* you understand what it's showing you.
+
+```
+Produce output → /fletcher → interpret and write → complete project → fresh terminal → /referee2
+```
+
+---
+
 ## The Story Behind This Skill
 
 In March 2026, I published a Substack post — which I later took down — claiming that AI-generated economics papers from the Social Catalyst Lab's APE project showed evidence of p-hacking. The evidence was a Brodeur ratio of 1.52 — 52% more reconstructed t-statistics just above the 1.96 significance threshold than just below. I had used Claude Code to extract coefficients and standard errors from 651 LaTeX manuscripts and divided them to construct t-statistics.

@@ -4,6 +4,22 @@
 
 ---
 
+## Recommended Order: Fletcher First, Then Referee 2
+
+Before running Referee 2, run `/fletcher` on your key figures and tables.
+
+Fletcher catches interpretation problems — features of your output you haven't explained, patterns inconsistent with your story, the number you stopped seeing because you already decided what it meant. It runs during analysis, in your working session, at the moment output appears.
+
+Referee 2 catches implementation problems — coding errors, replication failures, bad controls. It runs after the project is complete, in a fresh session.
+
+**Running Fletcher first means that by the time Referee 2 audits the code, the interpretation has already been stress-tested.** A project that passes both is one where the code is correct *and* you understand what it's showing you.
+
+```
+Produce output → /fletcher → interpret and write → complete project → fresh terminal → /referee2
+```
+
+---
+
 ## What This Skill Does
 
 Referee 2 is a five-audit protocol for catching errors, replication failures, and econometric problems in empirical work — before they become retractions, failed replications, or public embarrassments.
