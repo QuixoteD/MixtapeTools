@@ -214,7 +214,7 @@ After completing all six steps, produce a brief Fletcher Report:
 
 This skill is named for Jason Fletcher (University of Wisconsin), who commented on Scott Cunningham's Substack post (Claude Code 35, March 2026) and asked about the spikes at t=1 and t=3 in a figure where Scott had focused entirely on the spike at t=2. The spike at t=1 was the tell — it was inconsistent with the p-hacking interpretation and pointed immediately to rounding.
 
-Fletcher described this as a habit from his own graduate training — the practice passed down of stepping back from the main coefficient and asking about something else in the table.
+Fletcher described this as a habit from his own graduate training — the practice passed down of stepping back from the main coefficient and asking about something else in the table. He wrote about it publicly in ["Owning All the Numbers"](https://jasonmfletcher.substack.com/p/owning-all-the-numbers) (March 2026).
 
 The Shklovsky principle: "Art exists to make one feel things, to make the stone stony." The purpose of this audit is to make you see your own output again, as if for the first time, before the story you want to tell has automated your perception.
 

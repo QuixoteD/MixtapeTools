@@ -26,6 +26,8 @@ The full account, including the rounding mechanism and a simulation, is in [Clau
 
 Jason Fletcher described his practice as something he learned from his own graduate training — the habit of reviewing a student's table by stepping back from the main coefficient and asking about something else: an odd pattern, an unexpected sign, a sample size that didn't add up. More often than you'd like to admit, that question mattered.
 
+After the exchange with Scott, Fletcher wrote a Substack post generalizing the lesson: [**"Owning All the Numbers: Why every number in your output is your responsibility"**](https://jasonmfletcher.substack.com/p/owning-all-the-numbers). It's worth reading in full. The argument is that research training tends to focus on getting *the coefficient of interest* — clean data → run model → format key output — but the real task is owning the table. Owning it means that every number in it, before anyone asks, is something you've already interrogated.
+
 That habit is what Scott needed before he published. Fletcher approached the figure without a stake in the p-hacking conclusion and asked about the number Scott wasn't explaining. This skill tries to institutionalize that practice.
 
 The Viktor Shklovsky principle: *art exists to defamiliarize — to make the stone stony again.* Habit makes perception automatic. We stop seeing our output because we've already decided what it means. The purpose of this audit is to break that. To make you see the figure as a stranger would, before the story has collapsed everything else into background noise.
@@ -52,7 +54,7 @@ The main result is one item on this list. Write the full list before proceeding.
 
 ---
 
-### Step 2: The Wolfe Question
+### Step 2: What Would Generate This?
 
 For each item on the list, ask: *what would generate this?*
 
@@ -114,7 +116,7 @@ After the six steps, produce a Fletcher Report:
 ### Step 1: Features Listed
 [full list]
 
-### Step 2: Wolfe Questions
+### Step 2: What Would Generate This?
 [for each feature: candidate explanations]
 
 ### Step 3: Hardest Feature
